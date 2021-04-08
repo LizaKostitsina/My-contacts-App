@@ -20,38 +20,50 @@
                         <color key="sectionIndexBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="vtA-zW-bbd" customClass="Cell" customModule="Swiftbook_TableViewApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="238.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="251"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vtA-zW-bbd" id="glG-Tk-BHH">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="238.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-zc-LxK">
-                                            <rect key="frame" x="5" y="0.0" width="277.5" height="238.5"/>
+                                            <rect key="frame" x="5" y="10" width="292" height="231"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="700" constant="50" id="c7Q-Al-6u7"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="sdkldcikls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MO-O7-0Rt">
-                                            <rect key="frame" x="292.5" y="11" width="101.5" height="216.5"/>
-                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LDo-QF-8dJ">
+                                            <rect key="frame" x="312" y="0.0" width="102" height="251"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="sdkldcikls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MO-O7-0Rt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="124.5"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wam-qv-s5h">
+                                                    <rect key="frame" x="0.0" y="126.5" width="102" height="124.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="3MO-O7-0Rt" secondAttribute="bottom" id="0Ox-55-5Lw"/>
-                                        <constraint firstItem="jCw-zc-LxK" firstAttribute="top" secondItem="glG-Tk-BHH" secondAttribute="top" id="1WZ-6U-sB8"/>
+                                        <constraint firstItem="jCw-zc-LxK" firstAttribute="top" secondItem="glG-Tk-BHH" secondAttribute="top" constant="10" id="1WZ-6U-sB8"/>
+                                        <constraint firstAttribute="trailing" secondItem="LDo-QF-8dJ" secondAttribute="trailing" id="2qp-ob-88W"/>
                                         <constraint firstItem="jCw-zc-LxK" firstAttribute="width" secondItem="glG-Tk-BHH" secondAttribute="height" multiplier="50:43" id="BYM-e9-xGP"/>
-                                        <constraint firstItem="3MO-O7-0Rt" firstAttribute="top" secondItem="glG-Tk-BHH" secondAttribute="topMargin" id="DRc-85-gAb"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="3MO-O7-0Rt" secondAttribute="trailing" id="Gj9-II-D5h"/>
-                                        <constraint firstItem="3MO-O7-0Rt" firstAttribute="leading" secondItem="jCw-zc-LxK" secondAttribute="trailing" constant="10" id="Lg3-y9-BPe"/>
+                                        <constraint firstItem="LDo-QF-8dJ" firstAttribute="leading" secondItem="jCw-zc-LxK" secondAttribute="trailing" constant="15" id="Gwj-i8-eSJ"/>
+                                        <constraint firstItem="LDo-QF-8dJ" firstAttribute="top" secondItem="glG-Tk-BHH" secondAttribute="top" id="Ksh-KG-6GW"/>
+                                        <constraint firstAttribute="bottom" secondItem="LDo-QF-8dJ" secondAttribute="bottom" id="M7P-6J-mmF"/>
                                         <constraint firstItem="jCw-zc-LxK" firstAttribute="leading" secondItem="glG-Tk-BHH" secondAttribute="leading" constant="5" id="cM2-0P-4Pm"/>
-                                        <constraint firstAttribute="bottom" secondItem="jCw-zc-LxK" secondAttribute="bottom" id="zKQ-Jp-l3s"/>
+                                        <constraint firstAttribute="bottom" secondItem="jCw-zc-LxK" secondAttribute="bottom" constant="10" id="zKQ-Jp-l3s"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="3MO-O7-0Rt" id="gHR-jK-k9s"/>
+                                    <outlet property="numberLabel" destination="Wam-qv-s5h" id="QNF-83-yPe"/>
                                     <outlet property="photoImage" destination="jCw-zc-LxK" id="9BK-Wl-2zO"/>
                                 </connections>
                             </tableViewCell>
@@ -76,6 +88,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
