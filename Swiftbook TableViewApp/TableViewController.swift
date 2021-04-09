@@ -10,19 +10,9 @@ import UIKit
 class TableViewController: UITableViewController {
 
     
-    let names = [
-        
-        "Emma Smith","Jessica Jones",
-        "James Evans", "Michael Moore",
-        "Alexander Miller", "Elizabeth Wilson"
-    ]
+    let contacts = Contact.getContacts()
     
-    let numbers = [
-        "+(495) 189365" ,"+(495) 892333",
-        "+(495) 200321","+(495) 102935",
-        "+(495) 2393115","+(495) 109235"
-    ]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,19 +21,19 @@ class TableViewController: UITableViewController {
 
     //MARK: TableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        names.count
+        contacts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! Cell
         
-        cell.nameLabel.text = names[indexPath.row]
+        cell.nameLabel.text = contacts[indexPath.row].name
         
         cell.photoImage.layer.cornerRadius = cell.photoImage.frame.height / 7
-        cell.photoImage.image = UIImage(named: names[indexPath.row])
+        cell.photoImage.image = UIImage(named: contacts[indexPath.row].image)
         
-        cell.numberLabel.text = numbers[indexPath.row]
+        cell.numberLabel.text = contacts[indexPath.row].number
         return cell
     }
     
@@ -52,6 +42,12 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
          return 90
         
+    }
+    
+    
+    
+    @IBAction func cancelAction(_ segue: UIStoryboardSegue){
+
     }
 }
 

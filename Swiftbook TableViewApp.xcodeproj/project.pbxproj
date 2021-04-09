@@ -13,6 +13,8 @@
 		AB2EDE2B261DBFCF005E7619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2EDE2A261DBFCF005E7619 /* Assets.xcassets */; };
 		AB2EDE2E261DBFCF005E7619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2EDE2C261DBFCF005E7619 /* LaunchScreen.storyboard */; };
 		AB2EDE37261DC1F9005E7619 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EDE36261DC1F9005E7619 /* TableViewController.swift */; };
+		AB34C7F3261F8C83000385D7 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB34C7F2261F8C83000385D7 /* ContactModel.swift */; };
+		AB6C964E2620676500507D83 /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C964D2620676500507D83 /* NewContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AB2EDE2D261DBFCF005E7619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB2EDE2F261DBFCF005E7619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2EDE36261DC1F9005E7619 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AB34C7F2261F8C83000385D7 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		AB6C964D2620676500507D83 /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				AB2EDE21261DBFC7005E7619 /* AppDelegate.swift */,
 				AB2EDE23261DBFC7005E7619 /* SceneDelegate.swift */,
 				AB2EDE27261DBFC7005E7619 /* Main.storyboard */,
+				AB6C964D2620676500507D83 /* NewContactViewController.swift */,
 				AB2EDE36261DC1F9005E7619 /* TableViewController.swift */,
+				AB34C7F2261F8C83000385D7 /* ContactModel.swift */,
 				AB2EDE2A261DBFCF005E7619 /* Assets.xcassets */,
 				AB2EDE2C261DBFCF005E7619 /* LaunchScreen.storyboard */,
 				AB2EDE2F261DBFCF005E7619 /* Info.plist */,
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB2EDE22261DBFC7005E7619 /* AppDelegate.swift in Sources */,
+				AB6C964E2620676500507D83 /* NewContactViewController.swift in Sources */,
 				AB2EDE37261DC1F9005E7619 /* TableViewController.swift in Sources */,
+				AB34C7F3261F8C83000385D7 /* ContactModel.swift in Sources */,
 				AB2EDE24261DBFC7005E7619 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
