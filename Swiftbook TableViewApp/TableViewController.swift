@@ -10,7 +10,7 @@ import UIKit
 class TableViewController: UITableViewController {
 
     
-    let contacts = Contact.getContacts()
+    var contacts = Contact.getContacts()
     
 
     override func viewDidLoad() {
@@ -28,12 +28,18 @@ class TableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! Cell
         
-        cell.nameLabel.text = contacts[indexPath.row].name
+        let contact = contacts[indexPath.row]
+        cell.nameLabel.text = contact.name
         
-        cell.photoImage.layer.cornerRadius = cell.photoImage.frame.height / 7
-        cell.photoImage.image = UIImage(named: contacts[indexPath.row].image)
+        cell.photoImage.layer.cornerRadius = cell.photoImage.frame.size.height / 7
+        if contact.image == nil {
+            cell.photoImage.image = UIImage(named: contact.contactImage!)
+        } else {
+            cell.photoImage.image = contact.image
+        }
         
-        cell.numberLabel.text = contacts[indexPath.row].number
+        cell.photoImage.clipsToBounds = true
+        cell.numberLabel.text = contact.number
         return cell
     }
     
@@ -46,8 +52,11 @@ class TableViewController: UITableViewController {
     
     
     
-    @IBAction func cancelAction(_ segue: UIStoryboardSegue){
-
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue){
+        guard let newContactVC = segue.source as? NewContactViewController else { return }
+        newContactVC.saveNewContact()
+        contacts.append(newContactVC.newContact!)
+        tableView.reloadData()
     }
 }
 

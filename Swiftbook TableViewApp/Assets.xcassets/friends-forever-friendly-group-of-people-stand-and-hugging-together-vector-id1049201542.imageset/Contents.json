@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "friends-forever-friendly-group-of-people-stand-and-hugging-together-vector-id1049201542.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
