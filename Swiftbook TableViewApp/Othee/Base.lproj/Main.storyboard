@@ -20,29 +20,29 @@
                         <color key="sectionIndexBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="vtA-zW-bbd" customClass="Cell" customModule="Swiftbook_TableViewApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="251"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="42.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vtA-zW-bbd" id="glG-Tk-BHH">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jCw-zc-LxK">
-                                            <rect key="frame" x="5" y="10" width="292" height="231"/>
+                                            <rect key="frame" x="5" y="10" width="120" height="22.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="700" constant="50" id="c7Q-Al-6u7"/>
+                                                <constraint firstAttribute="width" constant="120" id="c7Q-Al-6u7"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LDo-QF-8dJ">
-                                            <rect key="frame" x="312" y="0.0" width="102" height="251"/>
+                                            <rect key="frame" x="140" y="0.0" width="274" height="42.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="sdkldcikls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MO-O7-0Rt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="102" height="124.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="274" height="20.5"/>
                                                     <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wam-qv-s5h">
-                                                    <rect key="frame" x="0.0" y="126.5" width="102" height="124.5"/>
+                                                    <rect key="frame" x="0.0" y="22.5" width="274" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -53,7 +53,6 @@
                                     <constraints>
                                         <constraint firstItem="jCw-zc-LxK" firstAttribute="top" secondItem="glG-Tk-BHH" secondAttribute="top" constant="10" id="1WZ-6U-sB8"/>
                                         <constraint firstAttribute="trailing" secondItem="LDo-QF-8dJ" secondAttribute="trailing" id="2qp-ob-88W"/>
-                                        <constraint firstItem="jCw-zc-LxK" firstAttribute="width" secondItem="glG-Tk-BHH" secondAttribute="height" multiplier="50:43" id="BYM-e9-xGP"/>
                                         <constraint firstItem="LDo-QF-8dJ" firstAttribute="leading" secondItem="jCw-zc-LxK" secondAttribute="trailing" constant="15" id="Gwj-i8-eSJ"/>
                                         <constraint firstItem="LDo-QF-8dJ" firstAttribute="top" secondItem="glG-Tk-BHH" secondAttribute="top" id="Ksh-KG-6GW"/>
                                         <constraint firstAttribute="bottom" secondItem="LDo-QF-8dJ" secondAttribute="bottom" id="M7P-6J-mmF"/>
@@ -104,11 +103,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3148664-200" translatesAutoresizingMaskIntoConstraints="NO" id="Q09-aO-YDe">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3148664-200" translatesAutoresizingMaskIntoConstraints="NO" id="Q09-aO-YDe">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="Q09-aO-YDe" secondAttribute="bottom" id="69J-4D-t3a"/>
                                                 <constraint firstItem="Q09-aO-YDe" firstAttribute="top" secondItem="oFF-Gg-hAy" secondAttribute="top" id="Txy-K4-Jac"/>
@@ -243,10 +242,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addresstextField" destination="SW5-Mu-glH" id="MMu-IJ-HRY"/>
                         <outlet property="contactImage" destination="Q09-aO-YDe" id="RNS-er-GBf"/>
-                        <outlet property="enterAddressTF" destination="SW5-Mu-glH" id="MMu-IJ-HRY"/>
-                        <outlet property="enterNameTF" destination="6Og-GC-qm1" id="A2w-13-1BZ"/>
-                        <outlet property="enterNumberTF" destination="n2B-Bc-8xX" id="bIH-gE-VUc"/>
+                        <outlet property="nameTextField" destination="6Og-GC-qm1" id="A2w-13-1BZ"/>
+                        <outlet property="numberTextField" destination="n2B-Bc-8xX" id="bIH-gE-VUc"/>
                         <outlet property="saveButton" destination="ayZ-WO-Tb4" id="yJG-lw-sZu"/>
                     </connections>
                 </tableViewController>
@@ -306,6 +305,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

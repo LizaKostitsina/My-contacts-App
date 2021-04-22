@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6CFB860F7DC260426CE364 /* Pods_Swiftbook_TableViewApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40492AB03EB0868A2A7F099C /* Pods_Swiftbook_TableViewApp.framework */; };
 		AB2EDE22261DBFC7005E7619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EDE21261DBFC7005E7619 /* AppDelegate.swift */; };
 		AB2EDE24261DBFC7005E7619 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EDE23261DBFC7005E7619 /* SceneDelegate.swift */; };
 		AB2EDE29261DBFC7005E7619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2EDE27261DBFC7005E7619 /* Main.storyboard */; };
@@ -14,10 +15,15 @@
 		AB2EDE2E261DBFCF005E7619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2EDE2C261DBFCF005E7619 /* LaunchScreen.storyboard */; };
 		AB2EDE37261DC1F9005E7619 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2EDE36261DC1F9005E7619 /* TableViewController.swift */; };
 		AB34C7F3261F8C83000385D7 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB34C7F2261F8C83000385D7 /* ContactModel.swift */; };
+		AB5BD20F2626EE7A003E592E /* ActionSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BD20E2626EE7A003E592E /* ActionSheets.swift */; };
 		AB6C964E2620676500507D83 /* NewContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6C964D2620676500507D83 /* NewContactViewController.swift */; };
+		AB7B4EA1262702A000BE7ACA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B4EA0262702A000BE7ACA /* TableViewCell.swift */; };
+		AB7E6A8E2631ACA20071AF16 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7E6A8D2631ACA20071AF16 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BB91E164DA8E0FFC28EF4E9 /* Pods-Swiftbook TableViewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftbook TableViewApp.release.xcconfig"; path = "Target Support Files/Pods-Swiftbook TableViewApp/Pods-Swiftbook TableViewApp.release.xcconfig"; sourceTree = "<group>"; };
+		40492AB03EB0868A2A7F099C /* Pods_Swiftbook_TableViewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiftbook_TableViewApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2EDE1E261DBFC7005E7619 /* Swiftbook TableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftbook TableViewApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2EDE21261DBFC7005E7619 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB2EDE23261DBFC7005E7619 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +33,11 @@
 		AB2EDE2F261DBFCF005E7619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2EDE36261DC1F9005E7619 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		AB34C7F2261F8C83000385D7 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		AB5BD20E2626EE7A003E592E /* ActionSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheets.swift; sourceTree = "<group>"; };
 		AB6C964D2620676500507D83 /* NewContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactViewController.swift; sourceTree = "<group>"; };
+		AB7B4EA0262702A000BE7ACA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		AB7E6A8D2631ACA20071AF16 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		F57F25EF8A326051E02493AC /* Pods-Swiftbook TableViewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiftbook TableViewApp.debug.xcconfig"; path = "Target Support Files/Pods-Swiftbook TableViewApp/Pods-Swiftbook TableViewApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6CFB860F7DC260426CE364 /* Pods_Swiftbook_TableViewApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A6E8C919800D40F976F47AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F57F25EF8A326051E02493AC /* Pods-Swiftbook TableViewApp.debug.xcconfig */,
+				1BB91E164DA8E0FFC28EF4E9 /* Pods-Swiftbook TableViewApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		725110A759E029C97E499CE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40492AB03EB0868A2A7F099C /* Pods_Swiftbook_TableViewApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB2EDE15261DBFC7005E7619 = {
 			isa = PBXGroup;
 			children = (
+				AB7E6A8D2631ACA20071AF16 /* StorageManager.swift */,
 				AB2EDE20261DBFC7005E7619 /* Swiftbook TableViewApp */,
 				AB2EDE1F261DBFC7005E7619 /* Products */,
+				5A6E8C919800D40F976F47AF /* Pods */,
+				725110A759E029C97E499CE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +91,51 @@
 		AB2EDE20261DBFC7005E7619 /* Swiftbook TableViewApp */ = {
 			isa = PBXGroup;
 			children = (
-				AB2EDE21261DBFC7005E7619 /* AppDelegate.swift */,
-				AB2EDE23261DBFC7005E7619 /* SceneDelegate.swift */,
-				AB2EDE27261DBFC7005E7619 /* Main.storyboard */,
-				AB6C964D2620676500507D83 /* NewContactViewController.swift */,
-				AB2EDE36261DC1F9005E7619 /* TableViewController.swift */,
-				AB34C7F2261F8C83000385D7 /* ContactModel.swift */,
-				AB2EDE2A261DBFCF005E7619 /* Assets.xcassets */,
-				AB2EDE2C261DBFCF005E7619 /* LaunchScreen.storyboard */,
 				AB2EDE2F261DBFCF005E7619 /* Info.plist */,
+				AB7B4EA3262702A900BE7ACA /* Views */,
+				AB5BD20B2626EE0B003E592E /* Othee */,
+				AB5BD2082626EDC9003E592E /* Controllers */,
+				AB5BD2092626EDE9003E592E /* Models */,
 			);
 			path = "Swiftbook TableViewApp";
+			sourceTree = "<group>";
+		};
+		AB5BD2082626EDC9003E592E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB6C964D2620676500507D83 /* NewContactViewController.swift */,
+				AB2EDE36261DC1F9005E7619 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB5BD2092626EDE9003E592E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BD20E2626EE7A003E592E /* ActionSheets.swift */,
+				AB34C7F2261F8C83000385D7 /* ContactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB5BD20B2626EE0B003E592E /* Othee */ = {
+			isa = PBXGroup;
+			children = (
+				AB2EDE23261DBFC7005E7619 /* SceneDelegate.swift */,
+				AB2EDE21261DBFC7005E7619 /* AppDelegate.swift */,
+				AB2EDE27261DBFC7005E7619 /* Main.storyboard */,
+				AB2EDE2C261DBFCF005E7619 /* LaunchScreen.storyboard */,
+				AB2EDE2A261DBFCF005E7619 /* Assets.xcassets */,
+			);
+			path = Othee;
+			sourceTree = "<group>";
+		};
+		AB7B4EA3262702A900BE7ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B4EA0262702A000BE7ACA /* TableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB2EDE32261DBFCF005E7619 /* Build configuration list for PBXNativeTarget "Swiftbook TableViewApp" */;
 			buildPhases = (
+				BC6E47DD6BC3F442E5AC9E2D /* [CP] Check Pods Manifest.lock */,
 				AB2EDE1A261DBFC7005E7619 /* Sources */,
 				AB2EDE1B261DBFC7005E7619 /* Frameworks */,
 				AB2EDE1C261DBFC7005E7619 /* Resources */,
+				2762B5513D708B3A74FA80C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,16 +205,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2762B5513D708B3A74FA80C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swiftbook TableViewApp/Pods-Swiftbook TableViewApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swiftbook TableViewApp/Pods-Swiftbook TableViewApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swiftbook TableViewApp/Pods-Swiftbook TableViewApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC6E47DD6BC3F442E5AC9E2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swiftbook TableViewApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB2EDE1A261DBFC7005E7619 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AB2EDE22261DBFC7005E7619 /* AppDelegate.swift in Sources */,
+				AB5BD20F2626EE7A003E592E /* ActionSheets.swift in Sources */,
 				AB6C964E2620676500507D83 /* NewContactViewController.swift in Sources */,
 				AB2EDE37261DC1F9005E7619 /* TableViewController.swift in Sources */,
 				AB34C7F3261F8C83000385D7 /* ContactModel.swift in Sources */,
+				AB7B4EA1262702A000BE7ACA /* TableViewCell.swift in Sources */,
 				AB2EDE24261DBFC7005E7619 /* SceneDelegate.swift in Sources */,
+				AB7E6A8E2631ACA20071AF16 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +403,7 @@
 		};
 		AB2EDE33261DBFCF005E7619 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57F25EF8A326051E02493AC /* Pods-Swiftbook TableViewApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +424,7 @@
 		};
 		AB2EDE34261DBFCF005E7619 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB91E164DA8E0FFC28EF4E9 /* Pods-Swiftbook TableViewApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
